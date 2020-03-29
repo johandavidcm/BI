@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="6"
-  DTS:VersionGUID="{D98E2CE5-08F6-457F-98FC-F73DDDF632DC}">
+  DTS:VersionBuild="7"
+  DTS:VersionGUID="{D250ABF8-CA93-4B32-9E99-F68D2C67C740}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -3346,11 +3346,11 @@ where [refTable].[Product code] = ?</property>
               </outputs>
             </component>
             <component
-              refId="Package\Crear Factventas 1\Consolidar por Granularidad"
+              refId="Package\Crear Factventas 1\Consolidar x Granularidad"
               componentClassID="Microsoft.Aggregate"
               contactInfo="Agregado;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;3"
               description="Agrega datos mediante funciones como Average, Sum, Count, Max y Min. Por ejemplo, se agrupan datos para calcular la suma de las ventas por producto o el promedio de visitas por día."
-              name="Consolidar por Granularidad"
+              name="Consolidar x Granularidad"
               version="3">
               <properties>
                 <property
@@ -3378,21 +3378,21 @@ where [refTable].[Product code] = ?</property>
               </properties>
               <inputs>
                 <input
-                  refId="Package\Crear Factventas 1\Consolidar por Granularidad.Inputs[Entrada de agregado 1]"
+                  refId="Package\Crear Factventas 1\Consolidar x Granularidad.Inputs[Entrada de agregado 1]"
                   name="Entrada de agregado 1">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Crear Factventas 1\Consolidar por Granularidad.Inputs[Entrada de agregado 1].Columns[skFecha]"
+                      refId="Package\Crear Factventas 1\Consolidar x Granularidad.Inputs[Entrada de agregado 1].Columns[skFecha]"
                       cachedDataType="i4"
                       cachedName="skFecha"
                       lineageId="Package\Crear Factventas 1\Join por BKProducto.Outputs[Salida de combinación de mezcla].Columns[skFecha]" />
                     <inputColumn
-                      refId="Package\Crear Factventas 1\Consolidar por Granularidad.Inputs[Entrada de agregado 1].Columns[skproducto]"
+                      refId="Package\Crear Factventas 1\Consolidar x Granularidad.Inputs[Entrada de agregado 1].Columns[skproducto]"
                       cachedDataType="i4"
                       cachedName="skproducto"
                       lineageId="Package\Crear Factventas 1\Join por BKProducto.Outputs[Salida de combinación de mezcla].Columns[skproducto]" />
                     <inputColumn
-                      refId="Package\Crear Factventas 1\Consolidar por Granularidad.Inputs[Entrada de agregado 1].Columns[tCantidad]"
+                      refId="Package\Crear Factventas 1\Consolidar x Granularidad.Inputs[Entrada de agregado 1].Columns[tCantidad]"
                       cachedDataType="i2"
                       cachedName="tCantidad"
                       lineageId="Package\Crear Factventas 1\Join por BKProducto.Outputs[Salida de combinación de mezcla].Columns[tCantidad]" />
@@ -3402,7 +3402,7 @@ where [refTable].[Product code] = ?</property>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Crear Factventas 1\Consolidar por Granularidad.Outputs[Salida de agregado 1]"
+                  refId="Package\Crear Factventas 1\Consolidar x Granularidad.Outputs[Salida de agregado 1]"
                   name="Salida de agregado 1">
                   <properties>
                     <property
@@ -3417,9 +3417,9 @@ where [refTable].[Product code] = ?</property>
                   </properties>
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Crear Factventas 1\Consolidar por Granularidad.Outputs[Salida de agregado 1].Columns[skFecha]"
+                      refId="Package\Crear Factventas 1\Consolidar x Granularidad.Outputs[Salida de agregado 1].Columns[skFecha]"
                       dataType="i4"
-                      lineageId="Package\Crear Factventas 1\Consolidar por Granularidad.Outputs[Salida de agregado 1].Columns[skFecha]"
+                      lineageId="Package\Crear Factventas 1\Consolidar x Granularidad.Outputs[Salida de agregado 1].Columns[skFecha]"
                       name="skFecha">
                       <properties>
                         <property
@@ -3443,9 +3443,9 @@ where [refTable].[Product code] = ?</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Crear Factventas 1\Consolidar por Granularidad.Outputs[Salida de agregado 1].Columns[skproducto]"
+                      refId="Package\Crear Factventas 1\Consolidar x Granularidad.Outputs[Salida de agregado 1].Columns[skproducto]"
                       dataType="i4"
-                      lineageId="Package\Crear Factventas 1\Consolidar por Granularidad.Outputs[Salida de agregado 1].Columns[skproducto]"
+                      lineageId="Package\Crear Factventas 1\Consolidar x Granularidad.Outputs[Salida de agregado 1].Columns[skproducto]"
                       name="skproducto">
                       <properties>
                         <property
@@ -3469,9 +3469,9 @@ where [refTable].[Product code] = ?</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Crear Factventas 1\Consolidar por Granularidad.Outputs[Salida de agregado 1].Columns[tCantidad]"
+                      refId="Package\Crear Factventas 1\Consolidar x Granularidad.Outputs[Salida de agregado 1].Columns[tCantidad]"
                       dataType="i8"
-                      lineageId="Package\Crear Factventas 1\Consolidar por Granularidad.Outputs[Salida de agregado 1].Columns[tCantidad]"
+                      lineageId="Package\Crear Factventas 1\Consolidar x Granularidad.Outputs[Salida de agregado 1].Columns[tCantidad]"
                       name="tCantidad">
                       <properties>
                         <property
@@ -3701,19 +3701,19 @@ where [refTable].[Product code] = ?</property>
                       cachedDataType="i4"
                       cachedName="skFecha"
                       externalMetadataColumnId="Package\Crear Factventas 1\Factventas.Inputs[Entrada de destino de OLE DB].ExternalColumns[skFecha]"
-                      lineageId="Package\Crear Factventas 1\Consolidar por Granularidad.Outputs[Salida de agregado 1].Columns[skFecha]" />
+                      lineageId="Package\Crear Factventas 1\Consolidar x Granularidad.Outputs[Salida de agregado 1].Columns[skFecha]" />
                     <inputColumn
                       refId="Package\Crear Factventas 1\Factventas.Inputs[Entrada de destino de OLE DB].Columns[skproducto]"
                       cachedDataType="i4"
                       cachedName="skproducto"
                       externalMetadataColumnId="Package\Crear Factventas 1\Factventas.Inputs[Entrada de destino de OLE DB].ExternalColumns[skproducto]"
-                      lineageId="Package\Crear Factventas 1\Consolidar por Granularidad.Outputs[Salida de agregado 1].Columns[skproducto]" />
+                      lineageId="Package\Crear Factventas 1\Consolidar x Granularidad.Outputs[Salida de agregado 1].Columns[skproducto]" />
                     <inputColumn
                       refId="Package\Crear Factventas 1\Factventas.Inputs[Entrada de destino de OLE DB].Columns[tCantidad]"
                       cachedDataType="i8"
                       cachedName="tCantidad"
                       externalMetadataColumnId="Package\Crear Factventas 1\Factventas.Inputs[Entrada de destino de OLE DB].ExternalColumns[tCantidad]"
-                      lineageId="Package\Crear Factventas 1\Consolidar por Granularidad.Outputs[Salida de agregado 1].Columns[tCantidad]" />
+                      lineageId="Package\Crear Factventas 1\Consolidar x Granularidad.Outputs[Salida de agregado 1].Columns[tCantidad]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -4787,7 +4787,7 @@ where [refTable].[Product code] = ?</property>
               refId="Package\Crear Factventas 1.Paths[Salida de agregado 1]"
               endId="Package\Crear Factventas 1\Factventas.Inputs[Entrada de destino de OLE DB]"
               name="Salida de agregado 1"
-              startId="Package\Crear Factventas 1\Consolidar por Granularidad.Outputs[Salida de agregado 1]" />
+              startId="Package\Crear Factventas 1\Consolidar x Granularidad.Outputs[Salida de agregado 1]" />
             <path
               refId="Package\Crear Factventas 1.Paths[Salida de combinación de mezcla]"
               endId="Package\Crear Factventas 1\Ordenar Bk producto.Inputs[Entrada de ordenación]"
@@ -4795,7 +4795,7 @@ where [refTable].[Product code] = ?</property>
               startId="Package\Crear Factventas 1\Combinación de mezcla.Outputs[Salida de combinación de mezcla]" />
             <path
               refId="Package\Crear Factventas 1.Paths[Salida de combinación de mezcla1]"
-              endId="Package\Crear Factventas 1\Consolidar por Granularidad.Inputs[Entrada de agregado 1]"
+              endId="Package\Crear Factventas 1\Consolidar x Granularidad.Inputs[Entrada de agregado 1]"
               name="Salida de combinación de mezcla"
               startId="Package\Crear Factventas 1\Join por BKProducto.Outputs[Salida de combinación de mezcla]" />
             <path
@@ -5867,12 +5867,12 @@ where [refTable].[Product code] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
-          Size="210,42"
-          Id="Package\Crear Factventas 1\Consolidar por Granularidad"
+          Size="200,42"
+          Id="Package\Crear Factventas 1\Consolidar x Granularidad"
           TopLeft="397,560" />
         <EdgeLayout
           Id="Package\Crear Factventas 1.Paths[Salida de combinación de mezcla1]"
-          TopLeft="502,524">
+          TopLeft="499.5,524">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -5898,7 +5898,7 @@ where [refTable].[Product code] = ?</property>
           TopLeft="434,643" />
         <EdgeLayout
           Id="Package\Crear Factventas 1.Paths[Salida de agregado 1]"
-          TopLeft="500.25,602">
+          TopLeft="497.75,602">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
